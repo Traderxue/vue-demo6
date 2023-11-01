@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from "vue";
+import hot_coins from "@/components/hot_coins.vue";
 
 const phone = ref("");
 </script>
@@ -81,7 +82,59 @@ const phone = ref("");
         <div><img src="http://127.0.0.1:5173/banner4.png" alt="" /></div>
       </div>
       <div class="hot_coin">
-        
+        <hot_coins />
+      </div>
+    </div>
+    <div class="change">
+      <div>
+        <h3>为改变而来 让Web3瞬息而至</h3>
+        <span>加入BIB&Meta,感受中心文化交易所融合Web3生态所来的多元文化数字体验，一键开启Web3未来之旅</span
+        >
+      </div>
+      <div>
+        <img src="@/assets/img/img_2.png" alt="" />
+      </div>
+      <div>
+        <img src="@/assets/img/img_3.png" alt="">
+      </div>
+      <div>
+        <h3>为改变而来 让Web3瞬息而至</h3>
+        <span>加入BIB&Meta,感受中心文化交易所融合Web3生态所来的多元文化数字体验，一键开启Web3未来之旅</span
+        >
+      </div>
+      <div>
+        <h3>为改变而来 让Web3瞬息而至</h3>
+        <span>加入BIB&Meta,感受中心文化交易所融合Web3生态所来的多元文化数字体验，一键开启Web3未来之旅</span
+        >
+      </div>
+      <div>
+        <img src="@/assets/img/img_5.png" alt="">
+      </div>
+    </div>
+    <div class="product">
+      <h3>产品生态与服务</h3>
+      <div class="goods">
+        <div class="first">
+          <h4>现货</h4>                  
+          <span>覆盖主流币种与时下热门币种，平台持续在全球范围内配置优秀数字资产</span>
+          <img src="@/assets/img/goods_1.png" alt="">
+        </div>
+        <div>
+          <h4>合约</h4>    
+          <img src="@/assets/img/goods_2.png" alt="">      
+        </div>
+        <div>
+          <h4>合约跟单</h4>
+          <img src="@/assets/img/goods_3.png" alt="">
+        </div>
+        <div>
+          <h4>期权</h4>
+          <img src="@/assets/img/goods_2.png" alt="">
+        </div>
+        <div>
+          <h4>双币理财</h4>
+          <img src="@/assets/img/goods_3.png" alt="">
+        </div>
       </div>
     </div>
   </div>
@@ -164,7 +217,7 @@ const phone = ref("");
       font-size: 45px;
     }
     .web3 {
-      background: linear-gradient(to right, #00adb5, #95e1d3);
+      background: linear-gradient(to right, #e23e57, #14ffec);
       -webkit-background-clip: text;
       color: transparent;
     }
@@ -198,7 +251,7 @@ const phone = ref("");
   }
   .banner {
     width: auto;
-    height: 600px;
+    height: auto;
     background: #131418;
     padding: 20px 20%;
     .top {
@@ -235,6 +288,82 @@ const phone = ref("");
         img {
           width: 100%;
           height: auto;
+        }
+      }
+    }
+  }
+  .change {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    padding: 20px 20%;
+    background: #16191f;
+    div {
+      width: 50%;
+      height: 300px;
+      box-sizing: border-box;
+      padding: 40px 0px;
+      text-align: center;
+      h3 {
+        font-size: 24px;
+        background: linear-gradient(to right, #e23e57, #14ffec);
+        -webkit-background-clip: text;
+        color: transparent;
+        padding: 35px 0px;
+      }
+      img {
+        width: 260px;
+        height: 260px;
+      }
+      span{
+        font-size: 14px;
+      }
+    }
+  }
+  .product{
+    width: auto;
+    height: 600px;
+    background: #131418;
+    padding: 30px 20%;
+    h3{
+      text-align: center;
+      font-size: 34px;
+      background: linear-gradient(to right, #e23e57, #14ffec);
+        -webkit-background-clip: text;
+        color: transparent;
+        padding: 35px 0px;
+    }
+    .goods{
+      height: 220px;
+      display: flex;
+      justify-content: space-around;
+      .first{
+        width: 25%;
+      }
+      div{
+        width: 13%;
+        background: #16191F;
+        border-radius: 15px;
+        box-sizing: border-box;
+        padding: 15px;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        h4{
+          font-weight: 600;
+          font-size: 16px;
+          padding: 20px 0px;
+        }
+        span{
+          font-size: 14px;
+        }
+        img{
+          width: 60px;
+          height: 60px;
         }
       }
     }
