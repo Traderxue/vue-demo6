@@ -56,12 +56,34 @@ const phone = ref("");
         <span>Lanuchpad</span>
         <span class="material-symbols-outlined"> chevron_right </span>
       </div>
-      <el-input v-model="phone" placeholder="Please input">
-        <template #append>立即注册</template>
+      <el-input v-model="phone" placeholder="请输入邮箱/手机号">
+        <template #append>
+          <el-button type="primary">立即注册</el-button>
+        </template>
       </el-input>
       <img src="@/assets/img/img_1.png" alt="" class="right_png" />
     </div>
-    <div class="banner"></div>
+    <div class="banner">
+      <div class="top">
+        <div class="left">
+          <img src="@/assets/img/rebot.png" alt="" />
+          <span>【热门币常新交易】 活动公告</span>
+        </div>
+        <div class="right">
+          <span>更多</span>
+          <span class="material-symbols-outlined"> chevron_right </span>
+        </div>
+      </div>
+      <div class="card">
+        <div><img src="http://127.0.0.1:5173/banner1.png" alt="" /></div>
+        <div><img src="http://127.0.0.1:5173/banner2.png" alt="" /></div>
+        <div><img src="http://127.0.0.1:5173/banner3.png" alt="" /></div>
+        <div><img src="http://127.0.0.1:5173/banner4.png" alt="" /></div>
+      </div>
+      <div class="hot_coin">
+        
+      </div>
+    </div>
   </div>
 </template>
 
@@ -139,12 +161,24 @@ const phone = ref("");
     flex-direction: column;
     position: relative;
     h3 {
-      font-size: 35px;
+      font-size: 45px;
     }
     .web3 {
-      background: linear-gradient(to right, #e23e57, #14ffec);
+      background: linear-gradient(to right, #00adb5, #95e1d3);
       -webkit-background-clip: text;
       color: transparent;
+    }
+    .el-input {
+      width: 40%;
+      height: 45px;
+      border: 1px solid #0172f5;
+    }
+    ::v-deep(.el-input-group__append) {
+      background: #0172f5;
+      border: 0;
+      span {
+        color: #fff;
+      }
     }
     .right_png {
       position: absolute;
@@ -159,6 +193,49 @@ const phone = ref("");
       img {
         width: 35px;
         height: 35px;
+      }
+    }
+  }
+  .banner {
+    width: auto;
+    height: 600px;
+    background: #131418;
+    padding: 20px 20%;
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .left {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        cursor: pointer;
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+      .right {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        cursor: pointer;
+      }
+    }
+    .card {
+      margin: 25px 0px;
+      display: flex;
+      justify-content: space-around;
+      div {
+        width: 20%;
+        height: auto;
+        margin: 0px 5px;
+        overflow: hidden;
+        cursor: pointer;
+        img {
+          width: 100%;
+          height: auto;
+        }
       }
     }
   }
