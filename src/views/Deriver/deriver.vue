@@ -62,6 +62,26 @@ const shopList = ref([
         p_cny:"5000.00-6000.00",
         type:"银行卡"
     },
+    {
+        title:"鼎峰U商",
+        url:"http://127.0.0.1:5173/wx.png",
+        unit:"7706",
+        parent:"99.97%",
+        cny:"7.35",
+        p_usdt:"2730.00",
+        p_cny:"5000.00-6000.00",
+        type:"微信"
+    },
+    {
+        title:"鼎峰U商",
+        url:"http://127.0.0.1:5173/yhk.png",
+        unit:"7706",
+        parent:"99.97%",
+        cny:"7.35",
+        p_usdt:"2730.00",
+        p_cny:"5000.00-6000.00",
+        type:"银行卡"
+    },
 ])
 </script>
 
@@ -85,7 +105,7 @@ const shopList = ref([
           <span>{{item.unit}}单 {{item.parent}}</span>
         </div>
         <div>
-            <span style="font-weight: 600;">{{item.cny}} CNY</span>
+            <span style="font-weight: 600;color: #e23e57;">{{item.cny}} CNY</span>
         </div>
         <div style="color: #00b8a9;">
             <p>{{item.p_usdt}} USDT</p>
@@ -109,8 +129,9 @@ const shopList = ref([
 .deriver {
   width: auto;
   height: auto;
-  padding: 40px 20%;
+  padding: 60px 20%;
   box-sizing: border-box;
+  background: #16191F;
   h3 {
     font-size: 24px;
     padding: 20px 0px;

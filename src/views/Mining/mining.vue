@@ -34,6 +34,22 @@ const miningList = ref([
         power:"467.35",
         amount:"0"
     },
+    {
+        logo:"https://static.coinall.ltd/cdn/assets/imgs/234/8A135610E74EACD8.png",
+        type:"ETC",
+        hash:"SHA256",
+        miner:"14",
+        power:"467.35",
+        amount:"0"
+    },
+    {
+        logo:"https://static.coinall.ltd/cdn/assets/imgs/234/8A135610E74EACD8.png",
+        type:"ETC",
+        hash:"SHA256",
+        miner:"14",
+        power:"467.35",
+        amount:"0"
+    },
 ])
 </script>
 
@@ -122,8 +138,8 @@ const miningList = ref([
   .main {
     background: #f5f5f5;
     color: #000;
-    padding: 40px 20%;
-    height: 500px;    
+    padding: 65px 20%;
+    height: auto;    
     h3 {
       font-weight: 600;
       font-size: 22px;
@@ -140,6 +156,7 @@ const miningList = ref([
         display: flex;
         justify-content: space-around;
         font-weight: 600;
+        margin: 15px 0px;
         div{
             width: 16%;
             display: flex;
