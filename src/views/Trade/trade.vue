@@ -3,7 +3,7 @@ import { ref } from "vue";
 import typeData from "@/data/typeData.js"
 import upData from "@/data/upData.js"
 import downData from "@/data/downData.js"
-import kline from "../../components/kline.vue";
+import kline from "@/components/kline.vue";
 
 const listData = ref(typeData);
 </script>

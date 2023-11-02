@@ -2,60 +2,72 @@
 import { ref } from "vue";
 import { useRouter } from "vue-router";
 
-const router = useRouter()
+const router = useRouter();
 
 const phone = ref("");
 
+const active = ref("首页");
+
 const navData = ref([
   {
-    title:"首页",
-    path:"/home"
+    title: "首页",
+    path: "/home",
   },
   {
-    title:"现货交易",
-    path:"/trade"
+    title: "现货交易",
+    path: "/trade",
   },
   {
-    title:"法币交易",
-    path:"/deriver"
+    title: "法币交易",
+    path: "/deriver",
   },
-])
+]);
 
-const goTabs = (item) =>{
-  router.push(item.path)
-}
+const goTabs = (item) => {
+  router.push(item.path);
+  active.value = item.title
+};
 
-const goMining = ()=>{
-  router.push("/mining")
-}
+const goMining = () => {
+  router.push("/mining");
+  active.value = "矿池"
+};
 
-const goLock = () =>{
-  router.push("/lock")
-}
+const goLock = () => {
+  router.push("/lock");
+  active.value = "锁仓"
+};
 
-const login = () =>{
-  router.push("/login")
-}
+const login = () => {
+  router.push("/login");
+  active.value = "登录"
+};
 
-const register = () =>{
-  router.push("/register")
-}
+const register = () => {
+  router.push("/register");
+  active.value = "注册"
+};
 </script>
 
 <template>
   <div class="index">
     <div class="header">
       <div class="left">
-        <div v-for="(item,index) in navData" :key="index" @click="goTabs(item)">
-          <span>{{item.title}}</span>
+        <div
+          v-for="(item, index) in navData"
+          :key="index"
+          @click="goTabs(item)"
+          :class="active==item.title?'active':''"          
+        >
+          <span>{{ item.title }}</span>
         </div>
-        <div @click="goMining">
+        <div @click="goMining" :class="active=='矿池'?'active':''">
           <span class="material-symbols-outlined hot_icon">
             local_fire_department
           </span>
           <span>矿池</span>
         </div>
-        <div @click="goLock">
+        <div @click="goLock" :class="active=='锁仓'?'active':''">
           <span class="material-symbols-outlined hot_icon">
             local_fire_department
           </span>
@@ -63,8 +75,8 @@ const register = () =>{
         </div>
       </div>
       <div class="right">
-        <span @click="register">注册</span>
-        <button @click="login">登录</button>
+        <span @click="register" :class="active=='注册'?'active':''">注册</span>
+        <button @click="login" :class="active=='登录'?'active':''">登录</button>
         <span>下载</span>
         <el-dropdown>
           <div class="lang">
@@ -83,7 +95,7 @@ const register = () =>{
         </el-dropdown>
       </div>
     </div>
-    <RouterView/>
+    <RouterView />
   </div>
 </template>
 
@@ -152,8 +164,11 @@ const register = () =>{
       }
     }
   }
+  .active {
+    color: #e23e57;
+  }
 }
-:focus{
+:focus {
   outline: none;
 }
 </style>

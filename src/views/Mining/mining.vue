@@ -126,7 +126,7 @@ const miningList = ref([
     height: 500px;    
     h3 {
       font-weight: 600;
-      font-size: 18px;
+      font-size: 22px;
     }
     .title{
         display: flex;
