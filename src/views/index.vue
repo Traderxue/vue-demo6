@@ -16,7 +16,7 @@ const navData = ref([
     path:"/trade"
   },
   {
-    title:"衍生品",
+    title:"法币交易",
     path:"/deriver"
   },
 ])

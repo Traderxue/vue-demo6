@@ -1,0 +1,40 @@
+const downData = [
+    {
+        price:"23345",
+        num:"2.2"
+    },
+    {
+        price:"13645",
+        num:"1.32"
+    },
+    {
+        price:"23645",
+        num:"2.35"
+    },
+    {
+        price:"23645",
+        num:"5.0"
+    },
+    {
+        price:"23645",
+        num:"3.0"
+    },
+    {
+        price:"23645",
+        num:"2.35"
+    },
+    {
+        price:"23645",
+        num:"1.35"
+    },
+    {
+        price:"23645",
+        num:"4.35"
+    },
+    {
+        price:"23645",
+        num:"6.35"
+    },
+]
+
+export default downData

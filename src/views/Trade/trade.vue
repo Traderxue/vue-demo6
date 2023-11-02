@@ -1,7 +1,8 @@
 <script setup>
 import { ref } from "vue";
 import typeData from "@/data/typeData.js"
-import tradeData from "@/data/tradeData.js"
+import upData from "@/data/upData.js"
+import downData from "@/data/downData.js"
 import kline from "../../components/kline.vue";
 
 const listData = ref(typeData);
@@ -24,13 +25,13 @@ const listData = ref(typeData);
     <div class="mid"><kline/></div>
     <div class="right">
       <div class="top">
-        <div v-for="(item,index) in tradeData" :key="index">
+        <div v-for="(item,index) in upData" :key="index">
           <span>{{item.price}}</span><span>{{item.num}}</span>
         </div>
       </div>
       <div class="mid">24564</div>
       <div class="bottom">
-        <div v-for="(item,index) in tradeData" :key="index">
+        <div v-for="(item,index) in downData" :key="index">
           <span>{{item.price}}</span><span>{{item.num}}</span>
         </div>
       </div>

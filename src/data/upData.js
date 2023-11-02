@@ -1,36 +1,40 @@
-const tradeData = [
+const upData = [
     {
         price:"23645",
-        num:"0.35"
+        num:"1.2"
     },
     {
         price:"23645",
-        num:"0.35"
+        num:"1.6"
     },
     {
         price:"23645",
-        num:"0.35"
+        num:"2.4"
     },
     {
         price:"23645",
-        num:"0.35"
+        num:"1.8"
     },
     {
         price:"23645",
-        num:"0.35"
+        num:"2.2"
     },
     {
         price:"23645",
-        num:"0.35"
+        num:"2.4"
     },
     {
         price:"23645",
-        num:"0.35"
+        num:"3.6"
     },
     {
         price:"23645",
-        num:"0.35"
+        num:"3.5"
+    },
+    {
+        price:"23645",
+        num:"6.2"
     },
 ]
 
-export default tradeData
+export default upData

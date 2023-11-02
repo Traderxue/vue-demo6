@@ -144,6 +144,10 @@ onMounted(() => {
 
 const options = [
   {
+    value: "1x",
+    label: "1x",
+  },
+  {
     value: "10x",
     label: "10x",
   },
@@ -175,10 +179,13 @@ const options = [
   <div class="kline" id="kline" style="width: 100%; height: 400px"></div>
   <div class="btn">
     <el-cascader :options="options" clearable placeholder="请选择杠杆" />
-    <el-input v-model="input1" placeholder="请输入数量"/>
-    <el-button style="background: #25A750;color: #FFF;border: 0;">买入做多</el-button>
-    <el-button style="background: #CA3F64;color: #FFF;border: 0
-    ;">卖出做空</el-button>
+    <el-input v-model="input1" placeholder="请输入数量" />
+    <el-button style="background: #25a750; color: #fff; border: 0"
+      >买入做多</el-button
+    >
+    <el-button style="background: #ca3f64; color: #fff; border: 0"
+      >卖出做空</el-button
+    >
   </div>
 </template>
 
