@@ -53,9 +53,9 @@ onMounted(() => {
           <div>
             <span>{{item.type}}/USDT</span>
           </div>
-          <div><span>{{item.price}}</span></div>
-          <div><span>{{item.volume}}</span></div>
-          <div>{{item.parcent}}</div>
+          <div style="color: #08d9d6;"><span>{{item.price}}</span></div>
+          <div style="color: #e23e57;"><span>{{item.volume}}</span></div>
+          <div style="color: #e23e57;">{{item.parcent}}</div>
           <div>
             <button>交易</button>
           </div>
@@ -105,6 +105,7 @@ onMounted(() => {
         justify-content: space-around;
         align-items: center;
         padding: 15px 0px;
+        cursor: pointer;
         div {
           width: 15%;
           text-align: center;
