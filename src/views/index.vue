@@ -21,6 +21,10 @@ const navData = ref([
     title: "法币交易",
     path: "/deriver",
   },
+  {
+    title: "赚币",
+    path: "/earn",
+  },
 ]);
 
 const goTabs = (item) => {

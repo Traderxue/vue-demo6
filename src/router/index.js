@@ -48,6 +48,10 @@ const router = createRouter({
       {
         path:"/register",
         component:()=>import("@/views/Register/register.vue")
+      },
+      {
+        path:"/earn",
+        component:()=>import("@/views/Earn/earn.vue")
       }
     ])
    },
